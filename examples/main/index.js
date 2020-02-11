@@ -58,6 +58,7 @@ registerMicroApps(
     { name: 'react16-main', entry: '//localhost:7100', render, activeRule: genActiveRule('/react') },
     { name: 'react15 app', entry: '//localhost:7102', render, activeRule: genActiveRule('/15react15') },
     { name: 'vue app', entry: '//localhost:7101', render, activeRule: genActiveRule('/vue') },
+    { name: 'nuxt app', entry: '//127.0.0.1:8080', render, activeRule: genActiveRule('/nuxt') },
   ],
   {
     beforeLoad: [
