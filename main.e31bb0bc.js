@@ -35420,19 +35420,19 @@ function Framework(props) {
     className: _index.default.header
   }, _react.default.createElement("nav", null, _react.default.createElement("ol", null, _react.default.createElement("li", null, _react.default.createElement("a", {
     onClick: function onClick() {
-      return goto('home', '/');
+      return goto('home', '/qiankun');
     }
   }, "home")), _react.default.createElement("li", null, _react.default.createElement("a", {
     onClick: function onClick() {
-      return goto('vue app', '/vue');
+      return goto('vue app', '/qiankun/vue');
     }
   }, "vue2 + element2")), _react.default.createElement("li", null, _react.default.createElement("a", {
     onClick: function onClick() {
-      return goto('react app', '/react');
+      return goto('react app', '/qiankun/react');
     }
   }, "react16 + antd3")), _react.default.createElement("li", null, _react.default.createElement("a", {
     onClick: function onClick() {
-      return goto('nuxt app', '/nuxt');
+      return goto('nuxt app', '/qiankun/nuxt');
     }
   }, "nuxt"))))), loading ? _react.default.createElement("div", null, "loading...") : null, _react.default.createElement("div", {
     dangerouslySetInnerHTML: {
@@ -35516,17 +35516,17 @@ initApp();
   name: 'react16-main',
   entry: '//deep-han.github.io/qiankun/react',
   render: render,
-  activeRule: genActiveRule('/react')
+  activeRule: genActiveRule('/qiankun/react')
 }, {
   name: 'vue app',
   entry: '//deep-han.github.io/qiankun/vue',
   render: render,
-  activeRule: genActiveRule('/vue')
+  activeRule: genActiveRule('/qiankun/vue')
 }, {
   name: 'nuxt app',
   entry: '//deep-han.github.io/qiankun/nuxt',
   render: render,
-  activeRule: genActiveRule('/nuxt')
+  activeRule: genActiveRule('/qiankun/nuxt')
 }], {
   beforeLoad: [function (app) {
     console.log('before load', app);
@@ -35538,7 +35538,7 @@ initApp();
     console.log('after unload', app);
   }]
 });
-(0, _es.setDefaultMountApp)('/react');
+(0, _es.setDefaultMountApp)('/qiankun/react');
 (0, _es.start)({
   prefetch: true
 });
@@ -35570,7 +35570,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51060" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59549" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
